@@ -1,0 +1,139 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #00a2c6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+}
+
+#content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+article {
+    border: 1px solid #00a2c6; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+}
+
+aside {
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #00a2c6; 
+    border-radius: 5px; 
+    width: auto; 
+    height: fit-content;
+    margin-left: 20px;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 240px;
+}
+
+aside button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#slider img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #00a2c6;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px; 
+    }
+
+    header {
+        padding: 15px 0; 
+    }
+
+    .header-content {
+        flex-direction: column; 
+    }
+    aside {
+        margin: 0;
+    }
+
+    article {
+        padding: 10px; 
+    }
+}
+
+
