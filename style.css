@@ -28,18 +28,6 @@ main {
     flex: 1;
 }
 
-#content {
-    flex: 3;
-    margin-right: 20px;
-}
-
-article {
-    border: 1px solid #00a2c6; 
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px; 
-}
-
 aside {
     background: #f4f4f4;
     padding: 10px;
@@ -47,7 +35,18 @@ aside {
     border-radius: 5px; 
     width: auto; 
     height: fit-content;
-    margin-left: 20px;
+    margin-right: 20px; /* Modified to match new order */
+}
+
+#content {
+    flex: 3;
+}
+
+article {
+    border: 1px solid #00a2c6; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
 }
 
 .contact-img {
@@ -130,12 +129,10 @@ footer {
         flex-direction: column; 
     }
     aside {
-        margin: 0;
+        margin: 0 0 20px 0; /* Ensure margin is consistent with new layout */
     }
 
     article {
         padding: 10px; 
     }
 }
-
-
