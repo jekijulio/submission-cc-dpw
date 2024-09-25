@@ -23,6 +23,7 @@ header {
 
 main {
     display: flex;
+    flex-direction: column; 
     justify-content: space-between;
     padding: 20px;
     flex: 1;
@@ -35,7 +36,7 @@ aside {
     border-radius: 5px; 
     width: auto; 
     height: fit-content;
-    margin-right: 20px; /* Modified to match new order */
+    margin-right: 20px;
 }
 
 #content {
@@ -65,7 +66,7 @@ aside button {
 #slider {
     position: relative;
     width: 100%;
-    max-width: 420px;
+    max-width: 600px; 
     margin: 20px auto;
     text-align: center;
 }
@@ -129,10 +130,14 @@ footer {
         flex-direction: column; 
     }
     aside {
-        margin: 0 0 20px 0; /* Ensure margin is consistent with new layout */
+        margin: 0 0 20px 0; 
     }
 
     article {
         padding: 10px; 
+    }
+
+    #slider {
+        max-width: 100%; 
     }
 }
